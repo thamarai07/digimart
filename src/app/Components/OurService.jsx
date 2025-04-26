@@ -32,6 +32,7 @@ export default function OurService() {
             <p className="font-light text-[24px] my-4 text-black">We Build Apps That People Love</p>
             <p className="text-black">
               From idea to app store, we create mobile experiences that are
+              
               fast, user-friendly, and built to perform. Whether it’s Android,
               iOS, or cross-platform.
             </p>
