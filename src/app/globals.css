@@ -1,26 +1,135 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --primary: #e8f9ff;
+  --secondary: #fbfbfb;
+  --tertiary: #09122c;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--primary);
+  color: var(--tertiary);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.hero_tran {
+  position: relative;
+  overflow: hidden;
+  color: red;
+  animation: changecolor linear 5s infinite;
+}
+
+.hero_arrow {
+  position: relative;
+}
+.hero_arrow::after {
+  content: "";
+  background: url("../../public/arrow-1.png");
+
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.our_service_1,
+.our_service_2,
+.our_service_3,
+.our_service_4 {
+  position: relative;
+  transition: all 0.8s;
+}
+
+.our_service_1::after {
+  content: "";
+  position: absolute;
+  background: var(--primary);
+  width: 25px;
+  height: 25px;
+  bottom: -4px;
+  right: -4px;
+  border-top: solid 4px black;
+  border-left: solid 4px black;
+  border-top-left-radius: 10px;
+}
+
+.our_service_1:hover{
+  transform:scale(1.1);
+}
+.our_service_2::after {
+  content: "";
+  position: absolute;
+  background: var(--primary);
+  width: 25px;
+  height: 25px;
+  bottom: -4px;
+  left: -4px;
+  border-top: solid 4px black;
+  border-right: solid 4px black;
+  border-top-right-radius: 10px;
+}
+
+.our_service_3::after {
+  content: "";
+  position: absolute;
+  background: var(--primary);
+  width: 25px;
+  height: 25px;
+  top: -4px;
+  right: -4px;
+  border-bottom: solid 4px black;
+  border-left: solid 4px black;
+  border-bottom-left-radius: 10px;
+}
+.our_service_4::after {
+  content: "";
+  position: absolute;
+  background: var(--primary);
+  width: 25px;
+  height: 25px;
+  top: -4px;
+  left: -4px;
+  border-bottom: solid 4px black;
+  border-right: solid 4px black;
+  border-bottom-right-radius: 10px;
+}
+
+.our_service_1:hover,
+.our_service_2:hover,
+.our_service_3:hover ,
+.our_service_4:hover{
+  transform:scale(1.1);
+}
+
+@keyframes heroarrowjup {
+  50% {
+    /* transform: translatex(20px); */
+  }
+}
+
+@keyframes changecolor {
+  0% {
+    color: rgb(18, 255, 18);
+  }
+  10% {
+    color: rgb(18, 255, 18);
+  }
+  30% {
+    color: rgb(255, 25, 25);
+  }
+  40% {
+    color: rgb(255, 25, 25);
+  }
+  50% {
+    color: rgb(47, 94, 251);
+  }
+  60% {
+    color: rgb(47, 94, 251);
+  }
+  70% {
+    color: rgb(199, 0, 199);
+  }
+  80% {
+    color: rgb(199, 0, 199);
+  }
 }
