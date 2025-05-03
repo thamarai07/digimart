@@ -21,7 +21,7 @@ export default function Navbar() {
           </li>
           <li className="text-[20px]">
             <Link className="" href={"#"}>
-              For Business
+              Business
             </Link>
           </li>
           <li className="text-[20px]">

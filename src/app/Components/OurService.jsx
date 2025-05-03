@@ -16,10 +16,13 @@ export default function OurService() {
             <div className="flex lg:flex-row flex-col gap-10 justify-center items-center bg-white lg:p-2 rounded-4xl shadow-2xl shadow-gray-300 p-4">
               <img className="rounded-4xl" src={"/services/five.png"} />
               <div>
-                <h3 className="lg:text-[28px] text-[24px] font-semibold lg:mb-4 mb-2 ">
+                <h3 className="lg:text-[28px] text-[24px] font-semibold lg:mb-4 mb-2 bg-gradient-to-r from-emerald-400 to-cyan-400 rounded inline-block py-1 px-3 text-white">
                   Website Development
                 </h3>
-                <h4 className="lg:mb-4 mb-2 text-[20px]"> Build. Launch. Grow.</h4>
+                <h4 className="lg:mb-4 mb-2 text-[20px]  font-semibold">
+                  {" "}
+                   Build. Launch. Grow.
+                </h4>
                 <p className="leading-8 ">
                   {" "}
                   We don’t just build websites — we create digital experiences
@@ -30,10 +33,10 @@ export default function OurService() {
             </div>
           </FadingComponent>
           <FadingComponent>
-            <div className="flex lg:flex-row-reverse flex-col gap-10 justify-center items-center bg-white p-2 rounded-4xl shadow-2xl shadow-gray-300 p-4">
+            <div className="flex lg:flex-row-reverse flex-col gap-10 justify-center items-center bg-white lg:p-2 rounded-4xl shadow-2xl shadow-gray-300 p-4">
               <img src={"/services/two.png"} className="rounded-4xl" />
               <div>
-                <h3 className="lg:text-[28px] text-[24px] font-semibold lg:mb-4 mb-2">
+                <h3 className="lg:text-[28px] text-[24px] font-semibold lg:mb-4 mb-2 bg-gradient-to-r from-blue-800 to-indigo-900 rounded inline-block py-1 px-3 text-white">
                   Social Media Development
                 </h3>
 
@@ -51,7 +54,7 @@ export default function OurService() {
             <div className="flex lg:flex-row flex-col gap-10 justify-center items-center bg-white lg:p-2 rounded-4xl shadow-2xl shadow-gray-300 p-4">
               <img src={"/services/one.png"} className="rounded-4xl" />
               <div>
-                <h3 className="lg:text-[28px] text-[24px] font-semibold lg:mb-4 mb-2">
+                <h3 className="lg:text-[28px] text-[24px] font-semibold lg:mb-4 mb-2 bg-linear-to-r from-green-200 via-teal-400 to-cyan-600 rounded inline-block py-1 px-3 text-white">
                   App Development
                 </h3>
 
@@ -71,7 +74,9 @@ export default function OurService() {
             <div className="flex lg:flex-row-reverse flex-col gap-10 justify-center items-center bg-white lg:p-2 rounded-4xl shadow-2xl shadow-gray-300 p-4">
               <img src={"/services/three.png"} className="rounded-4xl" />
               <div>
-                <h3 className="lg:text-[28px] text-[24px] font-semibold lg:mb-4 mb-2">Editing</h3>
+                <h3 className="lg:text-[28px] text-[24px] font-semibold lg:mb-4 mb-2 bg-linear-to-r from-orange-600 via-amber-900 to-amber-950 rounded inline-block py-1 px-3 text-white">
+                  Editing
+                </h3>
 
                 <h4 className="lg:mb-4 mb-2 text-[20px]">
                   Perfect Editing, Every Time
@@ -88,7 +93,7 @@ export default function OurService() {
             <div className="flex lg:flex-row flex-col gap-10 justify-center items-center bg-white p-2 rounded-4xl shadow-2xl shadow-gray-300">
               <img src={"/services/four.png"} className="rounded-4xl" />
               <div>
-                <h3 className="lg:text-[28px] text-[24px] font-semibold lg:mb-4 mb-2">
+                <h3 className="lg:text-[28px] text-[24px] font-semibold lg:mb-4 mb-2 bg-linear-to-r from-amber-200 via-orange-400 to-red-600 rounded inline-block py-1 px-3 text-white">
                   Social Media Adds
                 </h3>
 
