@@ -7,7 +7,7 @@ import FadingComponent from "./Fading";
 export default function OurService() {
   return (
     <>
-      <section className="pt-2 max-w-[996px] m-auto">
+      <section className="pt-2 max-w-[996px] m-auto" id="business">
         <h2 className="lg:text-[52px] text-[32px] lg:p-4 p-2 text-center font-semibold lg:w-[60%] w-[90%] m-auto border-2 border-blue-950  rounded-4xl shadow-2xl shadow-blue-600 ">
           Our services
         </h2>

@@ -20,7 +20,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="text-[20px]">
-            <Link className="" href={"#"}>
+            <Link className="" href={"#business"}>
               Business
             </Link>
           </li>
