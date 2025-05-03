@@ -53,8 +53,8 @@ body {
   border-top-left-radius: 10px;
 }
 
-.our_service_1:hover{
-  transform:scale(1.1);
+.our_service_1:hover {
+  transform: scale(1.1);
 }
 .our_service_2::after {
   content: "";
@@ -93,12 +93,25 @@ body {
   border-right: solid 4px black;
   border-bottom-right-radius: 10px;
 }
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .our_service_1:hover,
 .our_service_2:hover,
-.our_service_3:hover ,
-.our_service_4:hover{
-  transform:scale(1.1);
+.our_service_3:hover,
+.our_service_4:hover {
+  transform: scale(1.1);
 }
 
 @keyframes heroarrowjup {

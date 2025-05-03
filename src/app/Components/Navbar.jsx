@@ -8,11 +8,11 @@ export default function Navbar() {
 
   return (
     <nav className="relative">
-      <div className="lg:block sm:hidden">
+      <div className="">
         <ul
-          className={`flex justify-center  gap-32 fixed left-0 right-0 z-[100000] transition delay-100 duration-500 ${
+          className={`flex justify-center lg:gap-32 gap-6 fixed left-0 right-0 z-[100000] transition delay-100 duration-500 ${
             scrollingDirection == "down" ? "-translate-y-20" : " translate-y-10"
-          }  w-[70%] m-auto bg-[#09122C] p-4 text-[#FBFBFB] rounded-full shadow-2xl shadow-fuchsia-300`}
+          }  lg:w-[70%] w-[90%] m-auto bg-[#09122C] p-4 text-[#FBFBFB] rounded-full shadow-2xl shadow-fuchsia-300`}
         >
           <li className="text-[20px]">
             <Link className="" href={"#"}>
