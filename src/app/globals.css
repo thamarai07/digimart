@@ -115,6 +115,71 @@ body {
   transform: scale(1.1);
 }
 
+.contact_us {
+  max-width: 768px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  background: white;
+  margin-top: 40px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.contact_us img {
+  height: 500px;
+  display: block;
+  border-radius: 20px;
+}
+.contact_us div {
+  background-color: white;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contact_us div > * {
+  display: block;
+}
+.contact_us .call_us,
+.contact_us .address,
+.contact_us .email_chat {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.contact_us span {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 18px;
+  right: 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .contact_us {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  .contact_us .call_us,
+  .contact_us .address,
+  .contact_us .email_chat {
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .contact_us span {
+    top: unset;
+    bottom: 0;
+  }
+}
 @keyframes heroarrowjup {
   50% {
     /* transform: translatex(20px); */

@@ -19,10 +19,23 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          async
+          type="module"
+          src="https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js"
+        ></script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+
+        {/* ✅ Moved chatbot component into body */}
+        <zapier-interfaces-chatbot-embed
+          is-popup="true"
+          chatbot-id="cmaexvzb2000wcmca5yf1yn7w"
+        ></zapier-interfaces-chatbot-embed>
       </body>
     </html>
   );

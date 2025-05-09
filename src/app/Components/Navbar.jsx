@@ -25,7 +25,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="text-[20px]">
-            <Link className="" href={"#"}>
+            <Link className="" href={"/contactus/"}>
               Contact
             </Link>
           </li>
