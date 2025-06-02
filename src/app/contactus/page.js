@@ -1,16 +1,20 @@
+"use client";
 import { FaSquarePhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaCircleArrowLeft } from "react-icons/fa6";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const ContactUs = () => {
+  const route = usePathname();
+  console.log(route);
   return (
     <>
       <div className="contact_us">
-        <span>
+        <span className={`${route !== "/contactus" && "hidden"}`}>
           {" "}
-          <Link href="/"> 
+          <Link href="/">
             <FaCircleArrowLeft size={40} />
           </Link>
         </span>
